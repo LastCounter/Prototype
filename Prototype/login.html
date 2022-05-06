@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="login.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pls log in</title>
+</head>
+
+<body>
+    <!--Headline -->
+    <div class="Headline">
+        <img src="circle.jpg" alt="">
+        <h3 class="HeadText">The Imaginary University</h3>
+    </div>
+
+  <div class="loginsContainer">
+    <div class="test">
+    <form autocomplete="off">
+        <h3>Staff Login</h3>
+        <label for="staffUnInput">Username:</label><br> 
+        <input type="text" id="staffUnInput"></input><br>
+
+        <label for="staffPwInput">Password:</label><br>
+        <input id="staffPwInput" type="password"></input><br><br>
+
+        <button class="buttom" id="staffButtom">Login</button>
+    </form>
+    </div>
+
+    <div class="test">
+    <form> 
+        <h3>Admin Login</h3>
+        <label for="adminUnInput">Username:</label><br>
+        <input type="text" id="adminUnInput"  ></input><br>
+
+        <label for="adminPwInput">Password:</label><br>
+        <input type="password" id="adminPwInput"></input><br>
+
+        <div id="messageContainer"></div><br>
+
+        <button class="buttom"  id="adminButtom">Login</button>
+    </form>
+    </div>
+</div>
+
+<script src="login.js"></script>
+</body>
+
+</html>

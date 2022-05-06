@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+    <title>Add/edit/remove</title>
+</head>
+<body>
+       <!--Headline -->
+       <div class="Headline">
+        <img src="circle.jpg" alt="">
+        <h3 class="HeadText">The Imaginary University</h3>
+    </div>
+
+    <h1>All Students</h1>
+
+    <div id="divAddStudents" class="tab tab-2"><!---------------------------->
+        Student "ID"*: <input type="text" name = "sID" id="sID"><br>
+        First Name*: <input type="text" name = "fName" id="fName"><br>
+        Last Name: <input type="text" name = "lName" id="lName"><br>
+        DOB: <input type="date" name = "birthday" id="birthday"><br>
+        Gender: <input type="radio" name="gender" value="Fem" id="gender">Fem  <!--name muss gleich damit man nur eines davon wählen kann-->
+                <input type="radio" name="gender" value="Male" id="gender">Male        <!--value übermittelt den Wert-->
+                <input type="radio" name="gender" value="Other" id="gender" checked>Other <!--checked auto Auswahl-->
+        Department: <input type="text" name = "depart" id="department"><br>
+        Email*: <input type="text" name = "email" id="email"><br>
+
+        <button id="buttonAddTable" >Add</button>
+      
+        
+    </div>
+        <button id="addStringButtan" >Add</button> <!---------------------------->
+    </div>
+
+
+
+
+
+    <div class="container">
+        
+        <div class="tab tab-1">
+            <table id="table" border="1">
+                <tr>     <!--Zeilen-->
+                    <th>Student "ID"**</th>   <!--Beschriftung Zeilen/Spalten-->
+                    <th>First Name**</th>
+                    <th>Last Name</th>
+                    <th>DOB</th>    <!--muss DatumFeld-->
+                    <th>Gender</th> <!--radiofeld:FEM/Male/OTHER-->
+                    <th>Department</th><!--Dropdown box: 1-6 Fachbereiche-->
+                    <th>Email**</th>
+                    
+                </tr>
+            </table>
+        </div><br><br>
+
+    
+  
+    <script src="add.js"></script>
+</body>
+</html>
